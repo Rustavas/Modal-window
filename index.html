@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Модальное окно</title>
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="stylesheet" href="./modal-styles.css" />
-</head>
-<body>
-  <button class="button" data-action="open-modal" id="openModalBtn">Открыть модалку</button>
-  <div class="backdrop" id="backdropId">
-    <div class="modal">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Модальное окно</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <button class="open-btn" id="openBtn">Открыть модалку</button>
+    <div class="overlay" id="overlay"></div>
+    <div class="modal-window" id="#modalWindow">
       <h2>Modal window</h2>
-        <p>Отладка в браузере
-          Давайте отвлечёмся от написания кода и поговорим о его отладке.
-          Отладка – это процесс поиска и исправления ошибок в скрипте. 
-          Все современные браузеры и большинство других сред разработки 
-          поддерживают инструменты для отладки – специальный графический интерфейс, 
-          который сильно упрощает отладку. Он также позволяет по шагам отследить, 
-          что именно происходит в нашем коде.
-          Мы будем использовать браузер Chrome, так как у него достаточно возможностей, 
-          в большинстве других браузеров процесс будет схожим.
-        </p>
-      <button type="button" class="button" data-action="close-modal" id="closeModalBtn">Закрыть</button>
+      <p>
+        Отладка в браузере Давайте отвлечёмся от написания кода и поговорим о его отладке. Отладка –
+        это процесс поиска и исправления ошибок в скрипте. Все современные браузеры и большинство
+        других сред разработки поддерживают инструменты для отладки – специальный графический
+        интерфейс, который сильно упрощает отладку. Он также позволяет по шагам отследить, что
+        именно происходит в нашем коде. Мы будем использовать браузер Chrome, так как у него
+        достаточно возможностей, в большинстве других браузеров процесс будет схожим.
+      </p>
+      <button type="button" class="close-btn" id="closeBtn">Закрыть</button>
     </div>
-  </div>
-  <script src="./script.js" type="module"></script>
-</body>
+
+    <!-- <script src="./script.js" type="module"></script> -->
+    <script src="./modal-script.js" type="module"></script>
+  </body>
 </html>

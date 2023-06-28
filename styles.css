@@ -1,7 +1,70 @@
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: sans-sherif;
+  height: 100vh;
+  position: relative;
+  padding-top: 50px;
+  padding-left: 15px;
+}
+body.open-modal {
+  overflow-y: hidden;
+}
 
- .backdrop {
+body.open-modal > .modal-window,
+body.open-modal > .overlay {
+  display: block;
+}
+
+.modal-window {
+  font-size: 30px;
+  width: 70%;
+  text-align: center;
+  background-color: rgb(255, 255, 0, 0.5);
+  padding: 20px 30px;
+  border: 2px solid #000;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  display: none;
+}
+.open-btn{
+  background-color: green;
+  font-size: 20px;
+  color: white;
+  border: 3px solid black;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 15px;
+  
+}
+.close-btn {
+  background-color: transparent;
+  font-size: 20px;
+  color: red;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+}
+ /* .backdrop {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -10,33 +73,35 @@
    left: 0;
    width: 100vw;
    height: 100vh;
-   background-color: rgba(0, 0, 0, 0.8);
+   background-color: rgba(0, 0, 0, 0.1);
    z-index: 999;
  
    pointer-events: initial;
    opacity: 1;
    visibility: visible;
    transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
- };
- .modal {
+ }; */
+ /* .modal {
    padding: 24px;
    border-radius: 4px;
    width: 100%;
    max-width: 640px;
    
-   min-height: 320px;
-   background-color: #fff;
+   min-height: 320px; */
+   /* background-color: #fff;
    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
  
    transform: scale(1.1);
    transition: transform 200ms ease-in-out;
- };
- body.show-modal .backdrop {
+ }; */
+ /* body.show-modal .backdrop {
    opacity: 1;
    visibility: visible;
    pointer-events: initial;
  };
  body.show-modal .modal {
    transform: scale(1);
- };
+ }; */
+
+ 
